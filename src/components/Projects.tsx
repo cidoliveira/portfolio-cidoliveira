@@ -2,7 +2,16 @@ import taskBlossomLogo from "../assets/task-blossom-logo.png";
 import stardewValleyMatchmakerLogo from "../assets/stardew-valley-matchmaker-logo.png";
 import randomPasswordLogo from "../assets/R2BZiqn.png";
 
-function Project(props) {
+type ProjectProps = {
+  logo: string;
+  name: string;
+  description: string;
+  techs: string[];
+  livePreview: string;
+  github: string;
+};
+
+function Project(props: ProjectProps) {
   return (
     <div className="border rounded-2xl w-80">
       <img
