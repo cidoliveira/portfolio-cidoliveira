@@ -2,18 +2,18 @@ import mioloLogo from "../assets/miolo-biro.jpg";
 import AfferoLabLogo from "../assets/afferolab_logo (1).jpeg";
 import leuiLogo from "../assets/leui_laboratorio_ergodesign_interfaces_logo.jpeg";
 
-interface InfoJobProps {
+type InfoJobProps = {
   company: string;
   role: string;
   date: string;
   img: string;
   description: string;
   techs: string[];
-}
+};
 
 function InfoJob(props: InfoJobProps) {
   return (
-    <div className="flex flex-col my-4 sm:my-6">
+    <div className="flex flex-col my-6 sm:my-8">
       <div className="flex flex-col gap-2 sm:gap-3">
         <div className="flex items-center gap-2">
           <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#F5F5F5] overflow-hidden shrink-0">
@@ -23,9 +23,7 @@ function InfoJob(props: InfoJobProps) {
               alt={props.company}
             />
           </div>
-          <h4 className="text-left text-xs sm:text-sm font-semibold">
-            {props.company}
-          </h4>
+          <h4 className="text-xs sm:text-sm font-semibold">{props.company}</h4>
         </div>
 
         <div className="flex items-center">
@@ -39,13 +37,13 @@ function InfoJob(props: InfoJobProps) {
           <span className="text-xs sm:text-sm">{props.date}</span>
         </div>
 
-        <p className="text-xs sm:text-sm text-left text-[#737373] mb-2 sm:mb-4">
+        <p className="text-xs sm:text-sm text-left text-[#737373] mb-4">
           {props.description}
         </p>
 
         <div className="text-left flex flex-wrap gap-2">
           {props.techs &&
-            props.techs.map((tech: string, idx: number) => (
+            props.techs.map((tech, idx) => (
               <span
                 key={idx}
                 className="bg-[#F5F5F5] inline-block self-start text-black text-[10px] sm:text-xs rounded-2xl px-3 py-0.5"
@@ -61,7 +59,7 @@ function InfoJob(props: InfoJobProps) {
 
 export default function Experience() {
   return (
-    <section className="flex flex-col gap-5 max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl mx-auto px-2 sm:px-4">
+    <section className="flex flex-col gap-5 max-w-3xl md:max-w-4xl lg:max-w-5xl mx-auto px-4">
       <div className="bg-[#F5F5F5] inline-flex self-center items-center text-black text-xs sm:text-sm rounded-2xl px-4 py-0.5">
         Experience
       </div>
