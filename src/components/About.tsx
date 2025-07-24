@@ -3,16 +3,16 @@ import CV from "../assets/Alcides-Oliveira-CV.pdf";
 
 export default function About() {
   return (
-    <div id="about" className="flex flex-col">
+    <div className="flex flex-col">
       <div className="bg-[#F5F5F5] inline-block self-start items-center text-black text-xs rounded-2xl px-4 py-0.5 gap-1 mb-5">
         About me
       </div>
-      <div className="flex">
-        <div className="flex flex-col gap-5">
-          <h2 className="text-3xl w-[30dvw] text-left font-bold">
+      <div className="flex flex-col sm:flex-row">
+        <div className="flex flex-col gap-5 flex-1 min-w-0">
+          <h2 className="text-2xl sm:text-3xl text-left font-bold">
             Passionate about creating impactful experiences
           </h2>
-          <p className="text-left w-[27dvw] text-wrap">
+          <p className="text-left text-[#737373]">
             With over 5 years of experience in digital design, I specialize in
             crafting intuitive and scalable user experiences for web and mobile
             platforms. My expertise spans UI/UX design, design systems, and
@@ -40,9 +40,9 @@ export default function About() {
           </div>
         </div>
         <img
-          className="object-cover w-300 h-95 rounded-2xl object-top"
+          className="object-cover w-full sm:w-64 h-48 sm:h-64 rounded-2xl object-top mt-6 sm:mt-0 sm:ml-8"
           src={profilePic}
-          alt=""
+          alt="Profile picture"
         />
       </div>
     </div>
