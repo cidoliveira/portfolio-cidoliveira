@@ -1,8 +1,6 @@
 import logo from "../assets/logo.svg";
-import { useState } from "react";
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header className="z-1000 flex items-center justify-between border rounded-full border-[#E5E5E5] p-1 px-3 md:px-5 text-[#171717] sticky top-4 mx-2 md:mx-[8vw] lg:mx-[15vw] bg-white">
       <a href="#home">
@@ -12,7 +10,6 @@ export default function Header() {
           alt="Logo"
         />
       </a>
-      {/* Desktop Nav */}
       <ul className="hidden sm:flex gap-3 md:gap-[2vw] text-xs md:text-sm">
         <li>
           <a className="hover:font-bold transition-all" href="#about">
@@ -30,46 +27,6 @@ export default function Header() {
           </a>
         </li>
       </ul>
-      {/* Mobile Hamburger */}
-      <button
-        className="sm:hidden p-2"
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Toggle menu"
-      >
-        <i className="fa-solid fa-bars text-xl"></i>
-      </button>
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <ul className="absolute top-16 right-4 bg-white border rounded-xl shadow-lg flex flex-col gap-2 p-4 text-xs z-50 sm:hidden">
-          <li>
-            <a
-              className="hover:font-bold transition-all"
-              href="#about"
-              onClick={() => setMenuOpen(false)}
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:font-bold transition-all"
-              href="#experience"
-              onClick={() => setMenuOpen(false)}
-            >
-              Experience
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:font-bold transition-all"
-              href="#projects"
-              onClick={() => setMenuOpen(false)}
-            >
-              Projects
-            </a>
-          </li>
-        </ul>
-      )}
       <div className="flex gap-1 md:gap-2.5">
         <div className="w-8 h-8 flex border border-solid rounded-full items-center justify-center">
           <a href="https://www.linkedin.com/in/cidoliveira1/">
