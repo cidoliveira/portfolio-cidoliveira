@@ -11,7 +11,7 @@ function App() {
       <div className="flex flex-col mx-2 max-sm:m-0 max-sm:mt-10 sm:mx-[10vw] lg:mx-[15vw] my-25 sm:my-[8vh] lg:my-[15dvh] font-[Inter] bg-white">
         <section
           id="home"
-          className="max-sm:mb-0 max-sm:mt-0 scroll-m-60 mt-15 mb-45"
+          className="max-sm:mb-20 max-sm:mt-10 scroll-m-60 mt-15 mb-45"
         >
           <Hero />
         </section>
