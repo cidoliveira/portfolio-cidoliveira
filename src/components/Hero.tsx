@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <article
       id="home"
-      className="my-30 flex flex-col justify-center align-middle items-center"
+      className=" flex flex-col justify-center align-middle items-center"
     >
       <div className="self-center flex items-center text-white bg-[#171717] text-xs rounded-2xl px-4 py-0.5 gap-1 mb-10">
         <i className="fa-solid fa-bolt"></i>

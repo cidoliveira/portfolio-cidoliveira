@@ -2,7 +2,7 @@ import logo from "../assets/logo.svg";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between border rounded-full border-[#E5E5E5] p-1 px-5 text-[#171717] sticky top-10">
+    <header className="flex items-center justify-between border rounded-full border-[#E5E5E5] p-1 px-5 text-[#171717] sticky top-10 mx-[15vw]  bg-white">
       <a href="#home">
         <img className="size-10 transition-all" src={logo} alt="Logo" />
       </a>
