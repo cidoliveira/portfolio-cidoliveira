@@ -40,7 +40,7 @@ export default function About() {
           </div>
         </div>
         <img
-          className="object-cover w-full sm:w-64 h-100 sm:h-100 rounded-2xl object-top mt-6 sm:mt-0 sm:ml-8"
+          className="object-cover w-full sm:w-64 h-48 sm:h-64 rounded-2xl object-top mt-6 sm:mt-0 sm:ml-8"
           src={profilePic}
           alt="Profile picture"
         />
