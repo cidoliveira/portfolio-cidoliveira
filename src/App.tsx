@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <Header />
-      <div className="flex flex-col mx-2 max-sm:m-0 max-sm:mt-10 sm:mx-[10vw] lg:mx-[12vw] my-25 sm:my-[8vh] lg:my-[5dvh] font-[Inter] bg-white">
+      <div className="flex flex-col mx-2 max-sm:m-0 max-sm:mt-10 sm:mx-[10vw] lg:mx-[12vw] my-25 sm:my-[8vh] lg:my-[9vh] font-[Inter] bg-white">
         <motion.section
           id="home"
           className="mt-16 sm:mt-20 mb-16 sm:mb-40"

@@ -17,7 +17,7 @@ export default function Hero() {
         {
           <SplitText
             text="Building Scalable & Engaging Experiences"
-            className="text-3xl sm:text-6xl font-bold text-center pb-2"
+            className="text-3xl sm:text-6xl font-bold text-center pb-2 md:mx-10"
             delay={100}
             duration={0.6}
             ease="power3.out"
