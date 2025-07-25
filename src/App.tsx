@@ -19,7 +19,7 @@ function App() {
       <div className="flex flex-col mx-2 max-sm:m-0 max-sm:mt-10 sm:mx-[10vw] lg:mx-[12vw] my-25 sm:my-[8vh] lg:my-[15dvh] font-[Inter] bg-white">
         <motion.section
           id="home"
-          className="max-sm:mb-20 max-sm:mt-10 scroll-m-60 mt-15 mb-45"
+          className="mt-16 sm:mt-20 mb-16 sm:mb-40"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.2 }}
@@ -30,7 +30,7 @@ function App() {
         </motion.section>
         <motion.section
           id="about"
-          className="max-sm:mb-0 max-sm:mt-0 scroll-m-60 mt-45 mb-45"
+          className="mt-16 sm:mt-20 mb-16 sm:mb-20"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.2 }}
@@ -41,7 +41,7 @@ function App() {
         </motion.section>
         <motion.section
           id="experience"
-          className="max-sm:mb-0 max-sm:mt-20 scroll-m-40 mt-45 mb-45"
+          className="mt-16 sm:mt-20 mb-16 sm:mb-20"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.2 }}
@@ -52,7 +52,7 @@ function App() {
         </motion.section>
         <motion.section
           id="projects"
-          className="max-sm:mb-0 max-sm:mt-20 scroll-m-40 mt-45 mb-45"
+          className="mt-16 sm:mt-20 mb-16 sm:mb-20"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, amount: 0.2 }}

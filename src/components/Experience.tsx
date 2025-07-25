@@ -23,7 +23,9 @@ function InfoJob(props: InfoJobProps) {
               alt={props.company}
             />
           </div>
-          <h4 className="text-xs sm:text-sm font-semibold">{props.company}</h4>
+          <h4 className="text-xs text-left sm:text-sm font-semibold">
+            {props.company}
+          </h4>
         </div>
 
         <div className="flex items-center">
