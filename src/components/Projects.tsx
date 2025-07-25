@@ -35,7 +35,12 @@ function Project(props: ProjectProps) {
         </div>
         <div className="flex gap-2.5 mt-5">
           <div className="hover:invert cursor-pointer transition-all">
-            <a className="" href={props.livePreview}>
+            <a
+              className=""
+              href={props.livePreview}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="flex gap-2 align-middle items-center bg-[#171717] text-white text-xs pl-2 pr-4 py-2 rounded-full cursor-pointer">
                 <i className="text-xl fa-solid fa-globe"></i>
                 Live Preview
@@ -43,7 +48,12 @@ function Project(props: ProjectProps) {
             </a>
           </div>
           <div className="cursor-pointer">
-            <a className="" href={props.github}>
+            <a
+              className=""
+              href={props.github}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="flex border-1 gap-2 align-middle items-center border-[#E5E5E5] text-[#171717] text-xs pl-2 pr-4 py-2 rounded-full cursor-pointer bg-white">
                 <i className="text-xl fa-brands fa-github"></i> View Code
               </button>
